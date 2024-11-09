@@ -1,0 +1,65 @@
+.project-top-content{
+    text-align: center;
+    margin: 1rem;
+}
+
+.project-box{
+    background: var(--card-bg);
+    width: 100%;
+    padding: 30px 15px;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-box-description{
+    padding: 1rem;
+    color: white;
+}
+.project-box-describe{
+    font-size: 0.8rem;
+    color: white !important;
+}
+.project-box-skills{
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.project-box-links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.project-detail{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-skill{
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.1rem;
+    background-color: var(--btn-secondary-bg);
+    border: none;
+    color: black;
+    margin-bottom: 1%;
+}
+.project-box-developed{
+    text-align: right;
+}
+.project-detail-display{
+    animation: appear 1s;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+        scale: 0.98;
+    }
+    100%{
+        opacity: 100%;
+        scale: 1;
+    }
+}

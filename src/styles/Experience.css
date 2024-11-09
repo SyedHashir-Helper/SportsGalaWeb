@@ -1,0 +1,31 @@
+.img-fit{
+    object-fit:contain;
+    border-radius: 5px;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    border: 1px solid var(--btn-primary-bg);
+    padding: 0.6rem;
+    background: var(--icon-bg);
+    filter: drop-shadow(-3px 3px 1px black);
+}
+
+.all--experiences{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+}
+@keyframes fading {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.experience-box-description{
+    /* padding: 1rem; */
+    color: white;
+    font-size: 0.85rem;
+}

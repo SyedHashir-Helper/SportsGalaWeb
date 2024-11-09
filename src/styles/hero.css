@@ -1,0 +1,227 @@
+.hero-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content, .hero-img{
+    width: 50%;
+}
+.hero-img{
+    display: flex;
+    padding: 0% 2% 2% 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-img img{
+    width: 75%;
+    /* filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2)); */
+    filter: drop-shadow(0px 10px 10px rgba(202, 200, 83, 0.2));
+    /* animation: changeshadow 2s infinite ease; */
+    transition: ease 1s;
+}
+
+.hero-img img:hover{
+    
+    transition: ease 0.3s;
+    /* animation: changeshadow 3s infinite ease; */
+    scale: 1.05;
+}
+@keyframes changeshadow {
+    0%{
+        filter: drop-shadow(0px 10px 10px rgba(202, 200, 83, 0.2));
+    }
+    25%{
+        
+        filter: drop-shadow(0px 10px 10px rgba(202, 200, 83, 0.4));
+    }
+    50%{
+        filter: drop-shadow(0px 10px 10px rgba(202, 200, 83, 0.6));
+        
+    }
+    75%{
+        filter: drop-shadow(0px 10px 10px rgba(202, 200, 83, 0.4));
+        
+    }
+    100%{
+        filter: drop-shadow(0px 10px 10px rgba(202, 200, 83, 0.2));
+    }
+}
+
+.typewriter h2:nth-child(2){
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+.shadow{
+    filter: drop-shadow(1px 1px 0px rgb(255, 255, 255));
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+.hero-content {
+    padding-top: 40px;
+}
+
+.hero-content h2{
+    font-size: 3rem;
+    line-height: 65px;
+}
+
+.hero-content p{
+    font-size: 1.1rem;
+}
+
+.highlight{
+    color: var(--primary-color);
+}
+
+
+.hero-content h1{
+    font-size: 3.5rem;
+    line-height: 65px;
+}
+
+.hero-btns{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.primary-btn, .secondary-btn{
+    padding: 0.8rem 1.5rem;
+    border: none; 
+    outline: none;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.primary-btn{
+    background: var(--btn-secondary-bg);
+    color: black;
+    font-weight: bold
+}
+
+.secondary-btn{
+    background: transparent;
+    border: 1px solid var(--btn-primary-bg);
+}
+
+.hero-contact-me{
+    border: 2px solid var(--btn-primary-bg);
+    border-radius: 15%;
+    margin: 4% 0%;
+    /* background-color: linear-gradient(45deg, rgba(15, 18, 61, 1), rgba(15, 18, 61, 1),  rgba(11, 41, 69, 1) ) !important; */
+    width: 75%;
+    padding: 2.5% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-con{
+    text-align: center;
+}
+.icon-con:hover{
+    transition: 1s ease-in-out;
+    animation: rotating 3s;
+}
+
+@keyframes rotating {
+    0%{
+        rotate: 0deg;
+        transition: 1s ease;
+        scale: 1;
+    }
+    10%{
+        rotate: 0deg;
+        transition: 1s ease;
+        scale: 1.6;
+    }
+    100%{
+        rotate: 360deg;
+        scale: 1;
+    }
+}
+.icon-con a:hover{
+    transition: 2s ease;
+    animation: change 3s infinite;
+}
+
+
+@keyframes change {
+    0%{
+        color: var(--btn-secondary-bg);
+
+    }
+    50%{
+        color: var(--btn-primary-bg);
+    }
+    100%{
+        color: var(--btn-secondary-bg);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-content h2{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-content h2{
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+    .hero-content h1{
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+
+    .hero-content p{
+        font-size: 0.9rem;
+    }
+
+    .primary-btn, .secondary-btn{
+        font-size: 0.8rem;
+    }
+
+    .hero-content, .hero-img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-content, .hero-img{
+        width: 100%;
+    }
+
+    .hero-wrapper{
+        flex-direction: column;
+    }
+}

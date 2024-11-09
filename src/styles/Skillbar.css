@@ -1,0 +1,51 @@
+.skill-bar {
+    margin: 10px 0;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: flex-end;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .skill-percentage {
+    font-weight: bold;
+  }
+  
+  .progress {
+    background-color: black;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .progress-bar {
+    background-color: var(--btn-secondary-bg);
+    height: 100%;
+    transition: width 0.5s;
+  }
+
+  .skill-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .skill-box-row{
+    margin: 3%;
+    background: var(--card-bg);
+    padding: 5%;
+    border-radius: 10px;
+  }
+
+  .btn-games{
+    background: var(--btn-secondary-bg);
+    border: none;
+    color: var(--btn-primary-bg);
+    font-size: 1rem;
+  }
