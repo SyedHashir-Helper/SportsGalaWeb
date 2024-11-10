@@ -46,7 +46,7 @@ export default function Testimonial() {
     { skill: 'Scavenger Hunt', manager: "Zulqarnain Haider", icon: <FaSearch size={50} color="#bbb"/>, link: "https://forms.gle/VWUiViYyDukTckco6" },
     { skill: 'Tekken 8', manager: "Syed Ahsan Imtiaz", icon: <FaGamepad size={50} color="#bbb"/>, link: "https://docs.google.com/forms/d/e/1FAIpQLScTku_riyii6FIufLeXys6ZT3lAE1Z9r-58NV-RbTm1mpGB1Q/viewform?usp=sf_link" },
     { skill: 'Cricket 19 PC', manager: "Syed M. Fraz", icon: <FaBaseballBall size={50} color="#bbb"/>, link: "https://forms.gle/MwEg8T8H8qzRpE5u8" },
-    { skill: 'Pithu Gol Garam', percentage: "Me", icon: <GiStonePile size={50} color="#bbb"/>, link: "" },
+    { skill: 'Pithu Gol Garam', manager: "Not Yet", icon: <GiStonePile size={50} color="#bbb"/>, link: "#" },
     // Add more skills as needed
   ];
 

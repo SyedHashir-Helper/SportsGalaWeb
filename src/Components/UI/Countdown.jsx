@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/Countdown.css";
+import {Row, Col} from 'antd'
 
 const Countdown= () => {
   const [seconds, setSeconds] = useState(0);
@@ -10,7 +11,8 @@ const Countdown= () => {
   const deadline = "December 2, 2024";
 
   const getTime = () => {
-    const time = Date.parse(deadline) - Date.now();
+    // const time = Date.parse(deadline) - Date.now();
+    const time = Date.now() - Date.now();
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
     setMinutes(Math.floor((time / (1000 * 60)) % 60));
@@ -24,6 +26,13 @@ const Countdown= () => {
 
   return (
     <section className="countdown-container">
+      <Row align={'middle'} justify={'space-between'}>
+        <Col md={24} lg={24} sm={24} xs={24} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+          <div className="slider-content-top" >
+                <h2> Revealing the <span className="highlight"> dates soon</span></h2>
+          </div>
+        </Col>
+        <Col md={24} lg={24} sm={24} xs={24}>
       <div className="countdown">
         <div className="countdown-box">
           <div className="countdown-value">{days < 10 ? "0" + days : days}</div>
@@ -45,6 +54,8 @@ const Countdown= () => {
           <div className="countdown-label">Seconds</div>
         </div>
       </div>
+        </Col>
+      </Row>
     </section>
   );
 };
