@@ -3,13 +3,15 @@ import './Particles.css';
 
 const Particles = () => {
     useEffect(() => {
-        const numParticles = 10;
+        const numParticles = 8;
         const particlesContainer = document.getElementById('particles-container');
 
         // Remove existing particles if they exist (to prevent duplication on re-render)
         while (particlesContainer.firstChild) {
             particlesContainer.removeChild(particlesContainer.firstChild);
         }
+
+        
 
         for (let i = 0; i < numParticles; i++) {
             let particle = document.createElement('div');
