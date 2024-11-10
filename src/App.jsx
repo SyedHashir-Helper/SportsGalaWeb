@@ -14,6 +14,7 @@ import Affiliations from './Components/UI/Affiliations';
 import Project from './Components/UI/Project';
 import Experiences from './Components/UI/Experiences';
 import Countdown from './Components/UI/Countdown';
+import Particles from './Components/Background/Particles';
 
 function App() {
   const [theme, setTheme] = useState('');
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <>
+      <Particles/>
       <Header theme={theme} toggleTheme={toggleTheme}/>
       <Hero theme={theme} />
       <Counter/>

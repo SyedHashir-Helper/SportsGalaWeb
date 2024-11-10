@@ -31,7 +31,7 @@ import { BiFootball } from 'react-icons/bi'; // Football from Boxicons
 import cricket from "../../images/cricket2.svg"
 import ludo from "../../images/ludo2.svg"
 import badminton from "../../images/badminton.svg"
-import { GiStonePile, GiFist, GiTightrope, GiHandGrip } from 'react-icons/gi';
+import { GiStonePile} from 'react-icons/gi';
 export default function Testimonial() {
 
   

@@ -69,7 +69,8 @@
 body{
   /* background: var(--body-bg); */
   /* background: #025464; */
-  background: url('./images/bg-2.jpg');
+  /* background: url('./images/bg-2.jpg'); */
+  background: linear-gradient(135deg, #111, #000);
   width: 100%;
   height: auto;
   font-family: var(--font-name);
