@@ -49,3 +49,20 @@
     color: var(--btn-primary-bg);
     font-size: 1rem;
   }
+
+
+  .custom-popover .ant-popover-inner {
+    background: linear-gradient(135deg, #111, #000) !important;  /* Custom background color */
+    color: #ffffff !important;                /* Custom text color */
+    border-radius: 8px !important;         /* Round corners */
+    padding: 15px !important;              /* Adjust padding */
+  }
+  
+  .custom-popover .ant-popover-arrow {
+    border-color: #ffcc00 !important;     /* Arrow color */
+  }
+
+  .custom-popover .ant-popover-title {
+    color: white !important; /* Change title color */
+    font-weight: bold !important; /* Optional: Make title bold */
+  }

@@ -1,10 +1,17 @@
 import React, { useRef, useState } from "react";
 import "../../styles/Skillbar.css";
-import { Row, Col, Progress } from "antd";
+import { Row, Col, Progress, Popover } from "antd";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const Skillbar = ({ skill, manager, icon, link }) => {
+
+  const content = (
+    <div>
+      <p style={{color: "var(--btn-primary-bg)"}}>Opening Soon</p>
+    </div>
+  );
+
   const rowRef = useRef();
 
   const handleMouseEnter = function () {
@@ -72,9 +79,13 @@ const Skillbar = ({ skill, manager, icon, link }) => {
             Game Manager: {manager}
           </Row>
           <Row>
-            <a className="secondary-btn" href={link} target="_blank">
-              Register
-            </a>
+            <Popover content={content} title="Registration" trigger="click"
+          overlayClassName="custom-popover"
+        >
+              <a className="secondary-btn">
+                Register
+              </a>
+            </Popover>
           </Row>
         </Col>
       
