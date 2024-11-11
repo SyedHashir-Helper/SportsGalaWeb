@@ -22,7 +22,7 @@ import Skillbar from "../Skillbar/Skillbar";
 import {Row, Col} from 'antd'
 
 import { FaFutbol, FaChess, FaRunning,FaGamepad, FaBaseballBall, FaFootballBall, FaTableTennis, FaSearchLocation, FaSearch , FaFistRaised  } from 'react-icons/fa';      // Font Awesome
-import { MdOutlineSportsTennis, MdDragIndicator } from 'react-icons/md';               // Material Design Icons
+import { MdOutlineSportsTennis, MdDragIndicator , MdSportsBasketball} from 'react-icons/md';               // Material Design Icons
 import { SiBandlab } from 'react-icons/si';                           // Simple Icons
 import { BiJoystick } from 'react-icons/bi';  
 // import { FaSoccerBall,  } from 'react-icons/fa'; 
@@ -47,6 +47,7 @@ export default function Testimonial() {
     { skill: 'Tekken 8', manager: "Syed Ahsan Imtiaz", icon: <FaGamepad size={50} color="#bbb"/>, link: "https://docs.google.com/forms/d/e/1FAIpQLScTku_riyii6FIufLeXys6ZT3lAE1Z9r-58NV-RbTm1mpGB1Q/viewform?usp=sf_link" , phone: "+923084706206"},
     { skill: 'Cricket 19 PC', manager: "Syed M. Fraz", icon: <FaBaseballBall size={50} color="#bbb"/>, link: "https://forms.gle/MwEg8T8H8qzRpE5u8", phone: "+923314466033" },
     { skill: 'Pithu Gol Garam', manager: "Not Yet", icon: <GiStonePile size={50} color="#bbb"/>, link: "https://forms.gle/yaeREmo88ZdANUWA8", phone: "+923164219759" },
+    { skill: 'Basketball', manager: "Not Yet", icon: <MdSportsBasketball size={50} color="#bbb"/>, link: "#", phone: "+92347732310" },
     // Add more skills as needed
   ];
 
