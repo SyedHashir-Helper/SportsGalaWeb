@@ -36,17 +36,17 @@ export default function Testimonial() {
 
   
   const skills = [
-    { skill: 'Football', manager: "Fahad Karim", icon: <BiFootball size={50} color="#bbb"/>, link: "https://forms.gle/TX5tGz2GpztfBjRh8"},
-    { skill: 'Chess', manager: "Abdul Mannan", icon: <FaChess size={50} color="#bbb"/> , link: ""},
-    { skill: 'Relay Race', manager: "M. Hamza", icon: <FaRunning size={50} color="#bbb"/> , link: ""},
-    { skill: 'Table Tennis', manager: "Ahmad", icon: <MdOutlineSportsTennis size={50} color="#bbb"/>, link: "https://docs.google.com/forms/d/e/1FAIpQLScvQsETqYQG3RKDCQxtXg-wg7V-AbmPGTu7Z45c7CWfcwnh1g/viewform?usp=sf_link" },
-    { skill: 'Cricket', manager: "Abdul Moeed Khan", icon: <img src={cricket} style={{color: "#bbb"}}/>, link: "https://forms.gle/Dh4fHAE2p6jcaV629" },
-    { skill: 'Ludo', manager: "Hafiz Yasir", icon: <img src={ludo} style={{color: "#bbb"}} />, link: "https://forms.gle/irUuo3yeABCWsz2Q9" },
-    { skill: 'Badminton', manager: "M. Tahir", icon: <img src={badminton} style={{color: "#bbb"}} />, link: "https://forms.gle/c3mbsKjckdHTFTT76" },
-    { skill: 'Scavenger Hunt', manager: "Zulqarnain Haider", icon: <FaSearch size={50} color="#bbb"/>, link: "https://forms.gle/VWUiViYyDukTckco6" },
-    { skill: 'Tekken 8', manager: "Syed Ahsan Imtiaz", icon: <FaGamepad size={50} color="#bbb"/>, link: "https://docs.google.com/forms/d/e/1FAIpQLScTku_riyii6FIufLeXys6ZT3lAE1Z9r-58NV-RbTm1mpGB1Q/viewform?usp=sf_link" },
-    { skill: 'Cricket 19 PC', manager: "Syed M. Fraz", icon: <FaBaseballBall size={50} color="#bbb"/>, link: "https://forms.gle/MwEg8T8H8qzRpE5u8" },
-    { skill: 'Pithu Gol Garam', manager: "Not Yet", icon: <GiStonePile size={50} color="#bbb"/>, link: "#" },
+    { skill: 'Football', manager: "Ali Haider", icon: <BiFootball size={50} color="#bbb"/>, link: "https://forms.gle/TX5tGz2GpztfBjRh8", phone: "+923237815502"},
+    { skill: 'Chess', manager: "Abdul Mannan", icon: <FaChess size={50} color="#bbb"/> , link: "https://forms.gle/5i1GCCPoxCHDoeuA9", phone: "+923314103466"},
+    { skill: 'Relay Race', manager: "M. Hamza", icon: <FaRunning size={50} color="#bbb"/> , link: "", phone: "+923234904070"},
+    { skill: 'Table Tennis', manager: "Ahmad", icon: <MdOutlineSportsTennis size={50} color="#bbb"/>, link: "https://docs.google.com/forms/d/e/1FAIpQLScvQsETqYQG3RKDCQxtXg-wg7V-AbmPGTu7Z45c7CWfcwnh1g/viewform?usp=sf_link", phone: "+923065911832" },
+    { skill: 'Cricket', manager: "Abdul Moeed Khan", icon: <img src={cricket} style={{color: "#bbb"}}/>, link: "https://forms.gle/Dh4fHAE2p6jcaV629" , phone: "+92347732310"},
+    { skill: 'Ludo', manager: "Hafiz Yasir", icon: <img src={ludo} style={{color: "#bbb"}} />, link: "https://forms.gle/irUuo3yeABCWsz2Q9", phone: "+923021947934" },
+    { skill: 'Badminton', manager: "M. Tahir", icon: <img src={badminton} style={{color: "#bbb"}} />, link: "https://forms.gle/c3mbsKjckdHTFTT76", phone: "+923023799872" },
+    { skill: 'Scavenger Hunt', manager: "Zulqarnain Haider", icon: <FaSearch size={50} color="#bbb"/>, link: "https://forms.gle/VWUiViYyDukTckco6", phone: "+923496322275" },
+    { skill: 'Tekken 8', manager: "Syed Ahsan Imtiaz", icon: <FaGamepad size={50} color="#bbb"/>, link: "https://docs.google.com/forms/d/e/1FAIpQLScTku_riyii6FIufLeXys6ZT3lAE1Z9r-58NV-RbTm1mpGB1Q/viewform?usp=sf_link" , phone: "+923084706206"},
+    { skill: 'Cricket 19 PC', manager: "Syed M. Fraz", icon: <FaBaseballBall size={50} color="#bbb"/>, link: "https://forms.gle/MwEg8T8H8qzRpE5u8", phone: "+923314466033" },
+    { skill: 'Pithu Gol Garam', manager: "Not Yet", icon: <GiStonePile size={50} color="#bbb"/>, link: "https://forms.gle/yaeREmo88ZdANUWA8", phone: "+923164219759" },
     // Add more skills as needed
   ];
 
@@ -77,12 +77,11 @@ export default function Testimonial() {
           </div> */}
             {skills.map((skill, index) => (
               <Col md={6} xs={12}>
-                  <Skillbar key={index} skill={skill.skill} manager={skill.manager} icon={skill.icon} link={skill.link} />
+                  <Skillbar key={index} skill={skill.skill} manager={skill.manager} icon={skill.icon} link={skill.link} phone={skill.phone} />
               </Col>
             ))}
 
           </Row>
-
       </div>
 
     </section>

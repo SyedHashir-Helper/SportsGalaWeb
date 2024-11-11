@@ -3,8 +3,9 @@ import "../../styles/Skillbar.css";
 import { Row, Col, Progress, Popover } from "antd";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { FaWhatsapp } from "react-icons/fa";
 
-const Skillbar = ({ skill, manager, icon, link }) => {
+const Skillbar = ({ skill, manager, icon, link, phone }) => {
 
   const content = (
     <div>
@@ -74,9 +75,14 @@ const Skillbar = ({ skill, manager, icon, link }) => {
             padding: "1rem 0px",
             height: "75px",
             color: "#bbb",
-            textAlign: "center"
+            textAlign: "center",
+            display: "flex",
+            alignItems: "center",
+            gap: "0.5rem",
+            flexDirection: "column"
           }}>
-            Game Manager: {manager}
+            <h5>Game Manager</h5>
+            <a href={`https://wa.me/${phone}`} style={{display: "flex", alignItems: "center", gap: "0.3rem"}}><FaWhatsapp/> {manager}</a>
           </Row>
           <Row>
             <Popover content={content} title="Registration" trigger="click"
