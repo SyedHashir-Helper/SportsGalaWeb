@@ -11,8 +11,8 @@ const Countdown= () => {
   const deadline = "November 12, 2024 10:00:00 GMT+0500";
 
   const getTime = () => {
-    const time = Date.parse(deadline) - Date.now();
-    // const time = Date.now() - Date.now();
+    // const time = Date.parse(deadline) - Date.now();
+    const time = Date.now() - Date.now();
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
     setMinutes(Math.floor((time / (1000 * 60)) % 60));
@@ -29,7 +29,7 @@ const Countdown= () => {
       <Row align={'middle'} justify={'space-between'}>
         <Col md={24} lg={24} sm={24} xs={24} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
           <div className="slider-content-top" >
-            <h2> Registrations will be <span className="highlight"> live at</span></h2>
+            <h2> Registrations are <span className="highlight">live</span></h2>
           </div>
         </Col>
         <Col md={24} lg={24} sm={24} xs={24}>

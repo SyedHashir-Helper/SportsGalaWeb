@@ -85,13 +85,9 @@ const Skillbar = ({ skill, manager, icon, link, phone }) => {
             <a href={`https://wa.me/${phone}`} style={{display: "flex", alignItems: "center", gap: "0.3rem"}}><FaWhatsapp/> {manager}</a>
           </Row>
           <Row>
-            <Popover content={content} title="Registration" trigger="click"
-          overlayClassName="custom-popover"
-        >
-              <a className="secondary-btn">
+              <a className="secondary-btn" href={link}>
                 Register
               </a>
-            </Popover>
           </Row>
         </Col>
       

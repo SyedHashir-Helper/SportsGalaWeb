@@ -38,7 +38,7 @@ export default function Testimonial() {
   const skills = [
     { skill: 'Football', manager: "Ali Haider", icon: <BiFootball size={50} color="#bbb"/>, link: "https://forms.gle/TX5tGz2GpztfBjRh8", phone: "+923237815502"},
     { skill: 'Chess', manager: "Abdul Mannan", icon: <FaChess size={50} color="#bbb"/> , link: "https://forms.gle/5i1GCCPoxCHDoeuA9", phone: "+923314103466"},
-    { skill: 'Relay Race', manager: "M. Hamza", icon: <FaRunning size={50} color="#bbb"/> , link: "", phone: "+923234904070"},
+    { skill: 'Relay Race', manager: "M. Hamza", icon: <FaRunning size={50} color="#bbb"/> , link: "https://forms.gle/bCSVV6WJBeTKN4sp7", phone: "+923234904070"},
     { skill: 'Table Tennis', manager: "Ahmad", icon: <MdOutlineSportsTennis size={50} color="#bbb"/>, link: "https://docs.google.com/forms/d/e/1FAIpQLScvQsETqYQG3RKDCQxtXg-wg7V-AbmPGTu7Z45c7CWfcwnh1g/viewform?usp=sf_link", phone: "+923065911832" },
     { skill: 'Cricket', manager: "Abdul Moeed Khan", icon: <img src={cricket} style={{color: "#bbb"}}/>, link: "https://forms.gle/Dh4fHAE2p6jcaV629" , phone: "+92347732310"},
     { skill: 'Ludo', manager: "Hafiz Yasir", icon: <img src={ludo} style={{color: "#bbb"}} />, link: "https://forms.gle/irUuo3yeABCWsz2Q9", phone: "+923021947934" },
@@ -47,7 +47,7 @@ export default function Testimonial() {
     { skill: 'Tekken 8', manager: "Syed Ahsan Imtiaz", icon: <FaGamepad size={50} color="#bbb"/>, link: "https://docs.google.com/forms/d/e/1FAIpQLScTku_riyii6FIufLeXys6ZT3lAE1Z9r-58NV-RbTm1mpGB1Q/viewform?usp=sf_link" , phone: "+923084706206"},
     { skill: 'Cricket 19 PC', manager: "Syed M. Fraz", icon: <FaBaseballBall size={50} color="#bbb"/>, link: "https://forms.gle/MwEg8T8H8qzRpE5u8", phone: "+923314466033" },
     { skill: 'Pithu Gol Garam', manager: "Not Yet", icon: <GiStonePile size={50} color="#bbb"/>, link: "https://forms.gle/yaeREmo88ZdANUWA8", phone: "+923164219759" },
-    { skill: 'Basketball', manager: "Abdul Moeed Khan", icon: <MdSportsBasketball size={50} color="#bbb"/>, link: "#", phone: "+92347732310" },
+    { skill: 'Basketball', manager: "Abdul Moeed Khan", icon: <MdSportsBasketball size={50} color="#bbb"/>, link: "https://forms.gle/eYekgznbABfTum6y9", phone: "+92347732310" },
     // Add more skills as needed
   ];
 
