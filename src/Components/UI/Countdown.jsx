@@ -8,7 +8,7 @@ const Countdown= () => {
   const [hours, setHours] = useState(0);
   const [days, setDays] = useState(0);
 
-  const deadline = "November 12, 2024 08:00:00 GMT+0500";
+  const deadline = "November 12, 2024 10:00:00 GMT+0500";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
@@ -29,7 +29,7 @@ const Countdown= () => {
       <Row align={'middle'} justify={'space-between'}>
         <Col md={24} lg={24} sm={24} xs={24} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
           <div className="slider-content-top" >
-                <h2> Registrations will be <span className="highlight"> live in</span></h2>
+            <h2> Registrations will be <span className="highlight"> live at</span></h2>
           </div>
         </Col>
         <Col md={24} lg={24} sm={24} xs={24}>
