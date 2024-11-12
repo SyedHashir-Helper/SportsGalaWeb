@@ -46,7 +46,7 @@ export default function Testimonial() {
     { skill: 'Scavenger Hunt', manager: "Zulqarnain Haider", icon: <FaSearch size={50} color="#bbb"/>, link: "https://forms.gle/VWUiViYyDukTckco6", phone: "+923496322275" },
     { skill: 'Tekken 8', manager: "Syed Ahsan Imtiaz", icon: <FaGamepad size={50} color="#bbb"/>, link: "https://docs.google.com/forms/d/e/1FAIpQLScTku_riyii6FIufLeXys6ZT3lAE1Z9r-58NV-RbTm1mpGB1Q/viewform?usp=sf_link" , phone: "+923084706206"},
     { skill: 'Cricket 19 PC', manager: "Syed M. Fraz", icon: <FaBaseballBall size={50} color="#bbb"/>, link: "https://forms.gle/MwEg8T8H8qzRpE5u8", phone: "+923314466033" },
-    { skill: 'Pithu Gol Garam', manager: "Not Yet", icon: <GiStonePile size={50} color="#bbb"/>, link: "https://forms.gle/yaeREmo88ZdANUWA8", phone: "+923164219759" },
+    { skill: 'Pithu Gol Garam', manager: "Fahad Karim Khan", icon: <GiStonePile size={50} color="#bbb"/>, link: "https://forms.gle/yaeREmo88ZdANUWA8", phone: "+923164219759" },
     { skill: 'Basketball', manager: "Abdul Moeed Khan", icon: <MdSportsBasketball size={50} color="#bbb"/>, link: "https://forms.gle/eYekgznbABfTum6y9", phone: "+92347732310" },
     // Add more skills as needed
   ];
